@@ -16,6 +16,7 @@ function Main (props) {
   // Learn more at: https://reactjs.org/docs/hooks-intro.html
   // The transaction submission status
   const [status, setStatus] = useState('');
+  const [statusPoe, setStatusPoe] = useState('');
   const [digest, setDigest] = useState('');
   const [owner, setOwner] = useState('');
   const [block, setBlock] = useState(0);
@@ -144,7 +145,7 @@ function Main (props) {
           />
         </Form.Field>
         {/* Status message about the transaction. */}
-        <div style={{ overflowWrap: 'break-word' }}>{status}</div>
+        <div style={{ overflowWrap: 'break-word' }}>{statusPoe}</div>
       </Form>
       <h1>Template Module</h1>
       <Card centered>
